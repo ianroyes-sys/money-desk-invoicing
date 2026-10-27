@@ -1,0 +1,52 @@
+export type LineItem = { desc: string; amount: number };
+export type Invoice = {
+  id: string;
+  client: string;
+  amount: number;
+  issued: string;
+  due?: string;
+  paid?: string;
+  items: LineItem[];
+  note?: string;
+};
+export type InvoiceWithStatus = Invoice & { status: "paid" | "overdue" | "open" };
+export type DeskAction = {
+  id: string;
+  title: string;
+  why: string;
+  warm?: boolean;
+  amountUsd: number;
+  probability: number;
+  minutes: number;
+  deadline: string | null;
+  where: string;
+  draft: string;
+  status: "open" | "done" | "dead" | "expired" | "snoozed";
+  daysOpen?: number;
+};
+export type Business = {
+  name: string;
+  tagline: string;
+  email: string;
+  website: string;
+  paymentNote: string;
+  prefix: string;
+  numbering: "sequential" | "yearly";
+  netDays: number;
+  readOnly: boolean;
+};
+export type MoneyData = {
+  mission: { goal: string; by: string; daysLeft: number };
+  mrr: { active: number; pending: number };
+  recurring: { name: string; amount: number; status: string; note?: string }[];
+  invoices: InvoiceWithStatus[];
+  invoiced: number;
+  overdue: number;
+  collected: number;
+  winsTotal: number;
+  deals: { name: string; stage: string; value?: string; note?: string; moved?: string; staleDays: number }[];
+  daysSinceMove: number | null;
+  stripe: { configured: boolean; available?: number; pending?: number; error?: string };
+  desk: { date: string | null; actions: DeskAction[] };
+  business: Business;
+};

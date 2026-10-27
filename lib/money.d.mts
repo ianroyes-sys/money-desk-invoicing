@@ -1,0 +1,12 @@
+import type { DeskAction, Invoice, InvoiceWithStatus, MoneyData } from "./types";
+export function isoDay(date: Date | string | number): string;
+export function addDays(day: string, n: number): string;
+export function daysBetween(from: string | Date, to: string | Date): number;
+export function nextInvoiceId(invoices: { id: string }[], opts?: { prefix?: string; numbering?: string; year?: number }): string;
+export function createInvoice(input: Record<string, unknown>, existing: Invoice[], opts?: { now?: Date; netDays?: number; prefix?: string; numbering?: string }): Invoice;
+export function markPaid(invoices: Invoice[], id: string, now?: Date): Invoice[];
+export function invoiceStatus(inv: Invoice, now?: Date): InvoiceWithStatus["status"];
+export function summarize(input: { register?: unknown; invoices?: Invoice[]; wins?: unknown[]; pipeline?: unknown; now?: Date }): Omit<MoneyData, "stripe" | "desk" | "business">;
+export function scoreAction(a: Partial<DeskAction>): number;
+export function rankActions<T extends Partial<DeskAction>>(actions: T[]): T[];
+export function openActions(desk: { actions?: DeskAction[] } | null, now?: Date): DeskAction[];

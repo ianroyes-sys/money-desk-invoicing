@@ -1,0 +1,10 @@
+{
+  "_demoNow": "2026-01-20",
+  "_edit": "Hand-edited. Recurring revenue you have actually agreed, plus the goal the clock counts down to.",
+  "mission": { "goal": "$1,000 in monthly recurring revenue", "by": "2026-06-30" },
+  "recurring": [
+    { "name": "Harbor Bakery · app maintenance", "amount": 99, "status": "active", "note": "Started December 2025" },
+    { "name": "Northside Climbing · app maintenance", "amount": 99, "status": "active" },
+    { "name": "Cedar & Co. Landscaping · hosting + updates", "amount": 149, "status": "pending", "note": "Starts after site launch" }
+  ]
+}

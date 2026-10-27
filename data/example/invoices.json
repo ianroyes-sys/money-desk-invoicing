@@ -1,0 +1,55 @@
+[
+  {
+    "id": "INV-0001",
+    "client": "Harbor Bakery",
+    "amount": 1500,
+    "issued": "2025-11-10",
+    "due": "2025-11-24",
+    "paid": "2025-11-20",
+    "items": [
+      { "desc": "Ordering app: design, build and TestFlight delivery", "amount": 1500 }
+    ],
+    "note": "Thank you for the project."
+  },
+  {
+    "id": "INV-0002",
+    "client": "Northside Climbing",
+    "amount": 1500,
+    "issued": "2025-12-01",
+    "due": "2025-12-15",
+    "paid": "2025-12-12",
+    "items": [
+      { "desc": "Member app: class schedule, check-in and push notifications", "amount": 1500 }
+    ]
+  },
+  {
+    "id": "INV-0003",
+    "client": "Northside Climbing",
+    "amount": 99,
+    "issued": "2026-01-01",
+    "due": "2026-01-15",
+    "items": [{ "desc": "App maintenance, January 2026", "amount": 99 }]
+  },
+  {
+    "id": "INV-0004",
+    "client": "Harbor Bakery",
+    "amount": 99,
+    "issued": "2026-01-01",
+    "due": "2026-01-15",
+    "paid": "2026-01-12",
+    "items": [{ "desc": "App maintenance, January 2026", "amount": 99 }]
+  },
+  {
+    "id": "INV-0005",
+    "client": "Cedar & Co. Landscaping",
+    "amount": 1648,
+    "issued": "2026-01-18",
+    "due": "2026-02-01",
+    "items": [
+      { "desc": "Website design and build", "amount": 1200 },
+      { "desc": "Online quote request and booking setup", "amount": 300 },
+      { "desc": "Hosting, first two months", "amount": 148 }
+    ],
+    "note": "50% deposit was waived per our agreement; full amount due on launch."
+  }
+]

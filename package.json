@@ -1,0 +1,29 @@
+{
+  "name": "money-desk-invoicing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Revenue HQ for a small studio: recorded MRR, Net-14 invoices with printable pages, deal staleness and a ranked money desk.",
+  "type": "module",
+  "engines": { "node": ">=20.11" },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --test",
+    "typecheck": "tsc --noEmit",
+    "invoice": "node scripts/invoice.mjs"
+  },
+  "dependencies": {
+    "next": "15.5.21",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "22.20.1",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3"
+  }
+}

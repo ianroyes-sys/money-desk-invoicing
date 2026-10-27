@@ -1,0 +1,9 @@
+{
+  "deals": [
+    { "name": "Maple Street Dental", "stage": "awaiting", "value": "$2,400 + $149/mo", "note": "Proposal sent, waiting on the office manager", "moved": "2026-01-08" },
+    { "name": "Riverside Yoga", "stage": "pitched", "value": "$1,800", "note": "Demo booked for next week", "moved": "2026-01-16" },
+    { "name": "Pine Hollow Bookshop", "stage": "lead", "value": "Website refresh", "note": "Met at the pitch night", "moved": "2025-12-20" },
+    { "name": "Cedar & Co. Landscaping", "stage": "won", "value": "$1,648 + $149/mo", "moved": "2026-01-15" },
+    { "name": "Old Mill Coffee", "stage": "lost", "value": "$1,200", "note": "Went with a template site", "moved": "2025-12-02" }
+  ]
+}

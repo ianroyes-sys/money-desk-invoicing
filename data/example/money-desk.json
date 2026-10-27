@@ -1,0 +1,69 @@
+{
+  "date": "2026-01-20",
+  "generatedBy": "money-desk loop (example output)",
+  "actions": [
+    {
+      "id": "chase-inv-0003",
+      "title": "Nudge Northside Climbing about INV-0003",
+      "why": "Invoice INV-0003 ($99) was due 2026-01-15 and is unpaid (data/invoices.json).",
+      "warm": true,
+      "amountUsd": 99,
+      "probability": 0.9,
+      "minutes": 5,
+      "deadline": null,
+      "where": "Reply on the original invoice email thread",
+      "draft": "Hi Sam, quick nudge on the January maintenance invoice (INV-0003, $99), which was due on the 15th. The payment link is in the original email. Thanks!",
+      "status": "open",
+      "daysOpen": 2
+    },
+    {
+      "id": "maple-street-followup",
+      "title": "Follow up on the Maple Street Dental proposal",
+      "why": "Deal has sat in `awaiting` for 12 days (data/pipeline.json); value $2,400 + $149/mo.",
+      "warm": true,
+      "amountUsd": 2400,
+      "probability": 0.35,
+      "minutes": 10,
+      "deadline": "2026-01-27",
+      "where": "Email to the office manager",
+      "draft": "Hi Dana, checking in on the patient app proposal from the 8th. Happy to walk through it in 15 minutes this week, or adjust scope if the timing is off. Which works better?",
+      "status": "open",
+      "daysOpen": 6
+    },
+    {
+      "id": "riverside-demo-prep",
+      "title": "Prepare the Riverside Yoga demo build",
+      "why": "Demo is booked (data/pipeline.json, moved 2026-01-16); a working build on their phone is the close.",
+      "warm": true,
+      "amountUsd": 1800,
+      "probability": 0.25,
+      "minutes": 90,
+      "deadline": "2026-01-26",
+      "where": "TestFlight external group",
+      "draft": "Hi Priya, the demo build is on TestFlight. Tap the invite link on your phone and you'll see your class schedule in the app before we talk on Tuesday.",
+      "status": "open",
+      "daysOpen": 1
+    },
+    {
+      "id": "harbor-retainer-jan",
+      "title": "Invoice Harbor Bakery for January maintenance",
+      "why": "Active $99/mo retainer with no January invoice.",
+      "warm": true,
+      "amountUsd": 99,
+      "probability": 1,
+      "minutes": 3,
+      "deadline": null,
+      "where": "Money tab, Issue an invoice",
+      "draft": "",
+      "status": "done",
+      "daysOpen": 0
+    }
+  ],
+  "expired": [],
+  "scoreboard": {
+    "cashCollectedThisMonthUsd": 99,
+    "openPipelineValueUsd": { "oneTime": 4200, "monthly": 149 },
+    "mrrActiveUsd": 198,
+    "actionsDoneLast7Days": 1
+  }
+}
